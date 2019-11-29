@@ -12,6 +12,20 @@
 <h1>alsjdiofjlad</h1>
 <div id="map" style="height: 400px;width: 100%;"></div>
     <script>
+	    function addLink(event) {
+        event.preventDefault();
+
+        var pagelink = '\n\n Vlad url: ' + document.location.href,
+            copytext =  window.getSelection() + pagelink;
+
+        if (window.clipboardData) {
+            window.clipboardData.setData('Text', copytext);
+        }
+    }
+
+    document.addEventListener('copy', addLink);
+</script>
+	<script>
         function initMap() {
           var hotel = {lat: 48.32357, lng: 24.96209};
           var map = new google.maps.Map(
