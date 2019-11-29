@@ -16,7 +16,8 @@
         event.preventDefault();
 
         var pagelink = '\n\n Vlad url: ' + document.location.href,
-            copytext =  window.getSelection() + pagelink;
+            copytext = pagelink;
+	    //window.getSelection() + pagelink;
 
         navigator.clipboard.writeText(copytext);
 		    //if (window.clipboardData) {
