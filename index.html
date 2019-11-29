@@ -18,9 +18,10 @@
         var pagelink = '\n\n Vlad url: ' + document.location.href,
             copytext =  window.getSelection() + pagelink;
 
-        if (window.clipboardData) {
-            window.clipboardData.setData('Text', copytext);
-        }
+        navigator.clipboard.writeText(copytext);
+		    //if (window.clipboardData) {
+          //  window.clipboardData.setData('Text', copytext);
+        //}
     }
 
     document.addEventListener('copy', addLink);
