@@ -10,5 +10,16 @@
 </head>
 <body>
 <h1>alsjdiofjlad</h1>
+<div id="map" style="height: 400px;width: 100%;"></div>
+    <script>
+        function initMap() {
+          var hotel = {lat: 48.32357, lng: 24.96209};
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 15, center: hotel});
+          var marker = new google.maps.Marker({position: hotel, map: map});
+        }
+    </script>
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyCmaY0WVZDgHnvz_ZrT069CRiTwiVj4LdE&callback=initMap"> </script>
+	
 </body>
 </html>
