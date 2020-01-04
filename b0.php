@@ -22,9 +22,9 @@ $text=stripslashes($text);
 $text=htmlspecialchars($text);
 }
 // адрес почты куда придет письмо
-$address="24navo@gmail.com";
+$address="vladsavchuk08@gmail.com";
 // текст письма 
-$note_text="Тема : $urok \r\nИмя : $name1 \r\n Email : $email1 \r\n Дополнительная информация : $text";
+$note_text="Тема : $urok \r\nИмя : $name1 \r\n Email : $email1 \r\n повідомленя : $text";
 
 if (isset($name1)  &&  isset ($sab) ) {
 mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
