@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <title>
+    ВІДЕО
+  </title>
+  <style>
+    #f1 {
+      width: 500px;
+    }
+
+    #f2 {
+      width: 400px;
+    }
+
+    body {
+      background-image: url("images/video(backgroung).jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <link rel="shortcut icon" href="images/video(ico).ico" type="image/x-icon" />
+</head>
+
+<body>
+  <p align="center"><img src="images/video(logo).png" id="f2" /></p>
+  <h1 align="center">
+    відео
+  </h1>
+  <p>
+    Їх покіщо нема
+  </p>
+  <h1 align="center">
+    Прикольна музика
+  </h1>
+  <video src="video/Goog BASS.mp4" id="f1" controls poster="images/poster(Good BASS).jpg" muted></video>
+  <script>
+    function addLink(event) {
+      event.preventDefault();
+      var pagelink =
+        "\n\n для чого текст копіюєш ? (джерело)url: " +
+        document.location.href,
+        copytext = pagelink;
+      //window.getSelection() + pagelink;
+      navigator.clipboard.writeText(copytext);
+      //if (window.clipboardData) {
+      //  window.clipboardData.setData('Text', copytext);
+      //}
+    }
+    document.addEventListener("copy", addLink);
+  </script>
+</body>
+
+</html>

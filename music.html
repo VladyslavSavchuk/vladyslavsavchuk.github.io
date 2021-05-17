@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <title>
+    Пісні
+  </title>
+  <style>
+    body {
+      background-image: url("images/music(background).jpg");
+    }
+
+    h1 {
+      color: #e8e8e8;
+    }
+
+    p {
+      color: #e8e8e8;
+    }
+
+    h2 {
+      color: #e8e8e8;
+    }
+
+    #f1 {
+      width: 100px;
+    }
+
+    #f2 {
+      color: #3fdbc1;
+    }
+
+    #f3 {
+      width: 350px;
+      height: 200px;
+    }
+  </style>
+  <link rel="shortcut icon" href="images/music(ico).ico" type="image/x-icon">
+</head>
+
+<body>
+  <!--
+УВАГА
+якщо у вас не працює відео (тег video)
+то оновіть браузер 
+-->
+  <p align="center"><img src="images/music(logo).png" id="f3"></p>
+  <h1 align="center">
+    Мої пісні
+  </h1>
+  <h2>
+    Покіщо їх нема :)
+  </h2>
+  <h1 align="center">
+    Прикольні (не мої)
+  </h1>
+  <p>
+    Bass
+  </p>
+  <audio src="audio/bass.mp3" controls></audio>
+  <p>
+    mix
+  </p>
+  <audio src="audio/mix.mp3" controls></audio>
+  <br />
+  <a href="main_web_site.html" target="blank">
+    <img src="images/стрілка.png" id="f1" alt="НАЗАД">
+  </a>
+  <br />
+  <span id="f2">
+    v1.0.0
+  </span>
+  <script>
+    function addLink(event) {
+      event.preventDefault();
+      var pagelink =
+        "\n\n для чого текст копіюєш ? (джерело)url: " +
+        document.location.href,
+        copytext = pagelink;
+      //window.getSelection() + pagelink;
+      navigator.clipboard.writeText(copytext);
+      //if (window.clipboardData) {
+      //  window.clipboardData.setData('Text', copytext);
+      //}
+    }
+    document.addEventListener("copy", addLink);
+  </script>
+</body>
+
+</html>

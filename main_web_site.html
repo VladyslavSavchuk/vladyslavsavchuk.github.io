@@ -1,53 +1,71 @@
 <html>
+
 <head>
-<title>
-	Основна
-</title>
-<link rel="stylesheet" type="text/css" href="main_css.css">
-<link rel="shortcut icon" href="images/facion.ico" type="image/x-icon">
+  <title>
+    Основна
+  </title>
+  <meta name="viewport" content="width= device-width" , content="height=device-height" , initial-scale=1.0>
+  <link rel="stylesheet" type="text/css" href="main_css.css">
+  <link rel="shortcut icon" href="images/facion.ico" type="image/x-icon">
 </head>
+
 <body>
-<h1 align="center">
-	Розробники
-</h1>
-<ul>
-	<a href="vlad_savchuk.html" 
-	target="blank"><li>Влад Савчук</li></a>
-</ul>
-<div class="down">
-	<a href=""><span>
-		<span align="center">Створино на (github)</span>
-		<img src="images/git-hub(icon).png" id="f2">
-	</span></a>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-<span id="f1">
-	v1.0.0
-</span>
-</div>
-<script>
-	function addLink(event) {
-	event.preventDefault();
-	var pagelink = '\n\n для чого текст копіюєш ? (джерело)url: ' + document.location.href,
-		copytext = pagelink;
-	//window.getSelection() + pagelink;
-	navigator.clipboard.writeText(copytext);
-		//if (window.clipboardData) {
-	  //  window.clipboardData.setData('Text', copytext);
-	//}
-}
-document.addEventListener('copy', addLink);
-</script>
-<script>
-	function initMap() {
-	  var hotel = {lat: 48.32357, lng: 24.96209};
-	  var map = new google.maps.Map(
-		  document.getElementById('map'), {zoom: 15, center: hotel});
-	  var marker = new google.maps.Marker({position: hotel, map: map});
-	}
-</script>
+  <div>
+    <a href="music.html" target="blank"><img src="images/music(icon).png" class="f3">
+      <p id="f4">
+        МУЗИКА
+      </p>
+    </a>
+    <br>
+    <br>
+    <hr id="f5">
+    <div>
+      <a href="video.html" target="_blank">
+        <img src="images/video(icon).png" class="f3">
+        <p id="f7">
+          ВІДЕО
+        </p>
+      </a>
+    </div>
+    <br>
+    <br>
+    <hr id="f8">
+    <br>
+    <br>
+  </div>
+  <h1 align="center">
+    Розробники
+  </h1>
+  <ul>
+    <a href="vlad_savchuk.html" target="blank">
+      <li>Влад Савчук</li>
+    </a>
+  </ul>
+  <div class="down">
+    <a href="https://github.com/VladyslavSavchuk/vladyslavsavchuk.github.io" target="blank"><span>
+        <span align="center">Створино на (github)</span>
+        <img src="images/git-hub(icon).png" id="f2"> </span></a>
+    <br>
+    <span id="f1">
+      v1.0.0
+    </span>
+    <div id="f6">
+      <h2>
+        баги або проблеми<br>
+        пишіть↓
+      </h2>
+      <form action="https://github.com/VladyslavSavchuk/vladyslavsavchuk.github.io/blob/master/b0.php" method="post"
+        target="_blank" name="f1">
+        <input type="text" placeholder="Ваше имя" name="name1" required><br><br>
+        <input type="email" placeholder="Ваш email" name="email1" required="required><br><br>
+
+        <textarea placeholder=" Ваш текст" name="text" required="required"></textarea><br><br>
+
+        <input type="submit" value="відправити" name="sab">
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
+
 </html>
